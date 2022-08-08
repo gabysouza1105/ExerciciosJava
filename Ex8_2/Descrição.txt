@@ -1,0 +1,25 @@
+// Nesse exercício passei o código do Construtor para o setter e modifiquei um pouco para pedir uma 
+nova data até ela ser válida. 
+
+
+Escreva uma classe Data cuja instância (objeto) represente uma data. Esta classe deverá dispor dos
+seguintes métodos:
+
+Construtor: define a data chamando o setter
+
+Compara: compare com a data corrente e retorne:
+    i. 0 se as datas forem iguais;
+    ii. 1 se a data corrente for maior que a do parâmetro;
+    iii. -1 se a data do parâmetro for maior que a corrente.
+
+GetDia: retorna o dia da data
+
+GetMes: retorna o mês da data
+
+GetMesExtenso: retorna o mês da data corrente por extenso
+
+GetAno: retorna o ano da data
+
+IsBissexto: retorna verdadeiro se o ano da data corrente for bissexto e falso caso contrário
+
+setData: verifica se a data está certa e a define, se não estiver, pede para por de novo 

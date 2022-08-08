@@ -1,0 +1,20 @@
+Escreva uma classe Data cuja instância (objeto) represente uma data. Esta classe deverá dispor dos
+seguintes métodos:
+
+Construtor:  define a data que determinado objeto (através de parâmetro), este método verifica se a
+data está correta, caso não esteja a data é configurada como 01/01/0001
+
+Compara: compare com a data corrente e retorne:
+    i. 0 se as datas forem iguais;
+    ii. 1 se a data corrente for maior que a do parâmetro;
+    iii. -1 se a data do parâmetro for maior que a corrente.
+
+GetDia: retorna o dia da data
+
+GetMes: retorna o mês da data
+
+GetMesExtenso: retorna o mês da data corrente por extenso
+
+GetAno: retorna o ano da data
+
+IsBissexto: retorna verdadeiro se o ano da data corrente for bissexto e falso caso contrário

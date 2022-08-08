@@ -1,0 +1,13 @@
+Escreva uma classe em que cada objeto representa um Voo que acontece em determinada data e em
+determinado horário. Cada vôo possui no máximo 25 passageiros. A classe deve ter os seguintes métodos:
+
+Construtor: configura os dados do vôo: número do vôo, data (para
+armazenar a data utilize um objeto da classe Data, criada na questão anterior);
+
+Lugares Livre: retorna os Lugares disponíveis
+
+Verifica: verifica se o número da cadeira recebido como parâmetro está ocupada
+
+Ocupa: ocupa determinada cadeira do vôo, cujo número é recebido como parâmetro
+
+GetVoo: retorna o número do vôo
