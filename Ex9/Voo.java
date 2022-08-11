@@ -1,13 +1,14 @@
 package ExercíciosPOO.Ex9;
 
+import java.util.Arrays;
+import java.util.List;
+
 import ExercíciosPOO.Ex8_2.Data;
 
 public class Voo {
     private Data data;
     private String numeroVoo;
     private Boolean[] lugares = new Boolean[25];
-
-    // filter
 
     public Voo(String numeroVoo) {
         this.numeroVoo = numeroVoo;
@@ -24,10 +25,9 @@ public class Voo {
         for (int i = 0; i < lugares.length; i++) {
             if (lugares[i] == true) {
                 lugaresLivres[i] = i + 1;
-            } else {
-            }
+            } 
         }
-        
+
         return lugaresLivres;
     }
 

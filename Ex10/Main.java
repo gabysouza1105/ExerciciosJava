@@ -5,7 +5,9 @@ public class Main {
         try {
             Jogador jogador = new Jogador();
 
-            System.out.println(jogador.calcularIdade());
+            jogador.imprimirDados();
+            System.out.println("idade: " + jogador.calcularIdade());
+            System.out.println(jogador.verTempoParaAposentar());
 
         } catch (Exception e) {
             e.printStackTrace();
