@@ -64,21 +64,22 @@ public class Data {
     }
 
     public void setData() {
-        Scanner leitor = new Scanner(System.in);
-        Boolean dataValida = false;
-        while (dataValida != true) {
-            try {
-                System.out.print("Data: ");
-                String strData = leitor.nextLine();
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/uuuu")
-                        .withResolverStyle(ResolverStyle.STRICT);
-                LocalDate data = LocalDate.parse(strData, formatter);
-                this.data = data;
-                dataValida = true;
-            } catch (Exception e) {
-                System.out.println("Data inválida.");
-                setData();
-                dataValida = true;
+        try (Scanner leitor = new Scanner(System.in)) {
+            Boolean dataValida = false;
+            while (dataValida != true) {
+                try {
+                    System.out.print("Data: ");
+                    String strData = leitor.nextLine();
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/uuuu")
+                            .withResolverStyle(ResolverStyle.STRICT);
+                    LocalDate data = LocalDate.parse(strData, formatter);
+                    this.data = data;
+                    dataValida = true;
+                } catch (Exception e) {
+                    System.out.println("Data inválida.");
+                    setData();
+                    dataValida = true;
+                }
             }
         }
     }

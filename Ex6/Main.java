@@ -9,7 +9,7 @@ public class Main {
             int codigoItem = leitor.nextInt();
             System.out.println("Descrição: ");
             // absorver o enter do nextInt
-            String a = leitor.nextLine();
+            leitor.nextLine();
             String descricao = leitor.nextLine();
             System.out.println("Quantidade: ");
             int quantidade = leitor.nextInt();

@@ -67,7 +67,7 @@ public class Execucao {
                     case 5:
                         System.out.println("Nome:");
                         // absrver enter
-                        String a = leitor.nextLine();
+                        leitor.nextLine();
                         String novoNome = leitor.nextLine();
                         c.alterarNome(novoNome);
                         break;
