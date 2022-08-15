@@ -1,8 +1,5 @@
 package ExercíciosPOO.Ex9;
 
-import java.util.Arrays;
-import java.util.List;
-
 import ExercíciosPOO.Ex8_2.Data;
 
 public class Voo {
